@@ -1,0 +1,3 @@
+# The detector itself is pure standard library. Nothing here is needed to scan.
+pytest>=8            # test suite
+yara-python>=4.3     # OPTIONAL: enables the YARA layer (the scanner degrades gracefully without it)

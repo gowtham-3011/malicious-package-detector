@@ -1,0 +1,4333 @@
+{
+  "thresholds": {
+    "flag": 0.35,
+    "block": 0.6
+  },
+  "synthetic": {
+    "v1": {
+      "families": {
+        "dev/d1_setup_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.727
+        },
+        "dev/d2_b64_stage_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.908
+        },
+        "dev/d3_npm_postinstall_download_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.715
+        },
+        "dev/d4_npm_postinstall_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.726
+        },
+        "dev/d5_typosquat_cred_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 6,
+            "rate": 0.8333,
+            "ci95": [
+              0.4365,
+              0.9699
+            ]
+          },
+          "mean_score": 0.619
+        },
+        "dev/d6_npm_webhook_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.963
+        },
+        "dev/d7_pypi_pth_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.688
+        },
+        "dev/d8_dependency_confusion": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "mean_score": 0.534
+        },
+        "heldout/h1_npm_obfuscator_io": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.899
+        },
+        "heldout/h2_pypi_multistage_zlib": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.913
+        },
+        "heldout/h3_npm_persistence": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 5,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.4345
+            ]
+          },
+          "mean_score": 0.37
+        },
+        "heldout/h4_pypi_ci_gated": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.73
+        },
+        "adaptive/a1_getattr_dispatch": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "adaptive/a2_split_across_files": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "adaptive/a3_chr_join_command": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "adaptive/a4_delayed_trigger": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.507
+        },
+        "adaptive/a5_payload_in_data_file": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.08
+        },
+        "adaptive/a6_js_split_require": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "adaptive/a7_py_selective_env_keys": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "adaptive/a8_js_selective_env_keys": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "adaptive/a9_path_join_credentials": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/plain_math": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/b64_utils": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/http_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/env_config": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/expr_eval": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "benign/proc_runner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cred_reader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/native_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/readme_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/nspkg_pth": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/sec_scanner_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/embedded_asset": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/update_check": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/plugin_loader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/gh_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/template_data": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/vendored_build": {
+          "flag": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "mean_score": 0.649
+        },
+        "benign/util_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/postinstall_banner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/native_addon": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/husky_prepare": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/api_wrapper": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cli_tool": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/sec_fixtures_js": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/dyn_require": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        }
+      },
+      "splits": {
+        "dev": {
+          "flag": {
+            "k": 48,
+            "n": 48,
+            "rate": 1.0,
+            "ci95": [
+              0.9259,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 41,
+            "n": 48,
+            "rate": 0.8542,
+            "ci95": [
+              0.7283,
+              0.9275
+            ]
+          }
+        },
+        "heldout": {
+          "flag": {
+            "k": 20,
+            "n": 20,
+            "rate": 1.0,
+            "ci95": [
+              0.8389,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 15,
+            "n": 20,
+            "rate": 0.75,
+            "ci95": [
+              0.5313,
+              0.8881
+            ]
+          }
+        },
+        "adaptive": {
+          "flag": {
+            "k": 3,
+            "n": 27,
+            "rate": 0.1111,
+            "ci95": [
+              0.0385,
+              0.2806
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 27,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.1246
+            ]
+          }
+        },
+        "benign": {
+          "flag": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          }
+        }
+      },
+      "benign_hard_negatives": {
+        "flag": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        },
+        "block": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        }
+      },
+      "flagged_benign": [
+        "vendored_build"
+      ]
+    },
+    "v2": {
+      "families": {
+        "dev/d1_setup_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.727
+        },
+        "dev/d2_b64_stage_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.919
+        },
+        "dev/d3_npm_postinstall_download_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.715
+        },
+        "dev/d4_npm_postinstall_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.726
+        },
+        "dev/d5_typosquat_cred_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 6,
+            "rate": 0.8333,
+            "ci95": [
+              0.4365,
+              0.9699
+            ]
+          },
+          "mean_score": 0.619
+        },
+        "dev/d6_npm_webhook_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.963
+        },
+        "dev/d7_pypi_pth_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.768
+        },
+        "dev/d8_dependency_confusion": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "mean_score": 0.534
+        },
+        "heldout/h1_npm_obfuscator_io": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.899
+        },
+        "heldout/h2_pypi_multistage_zlib": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.853
+        },
+        "heldout/h3_npm_persistence": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 5,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.4345
+            ]
+          },
+          "mean_score": 0.37
+        },
+        "heldout/h4_pypi_ci_gated": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.73
+        },
+        "adaptive/a1_getattr_dispatch": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.748
+        },
+        "adaptive/a2_split_across_files": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "adaptive/a3_chr_join_command": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.64
+        },
+        "adaptive/a4_delayed_trigger": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.507
+        },
+        "adaptive/a5_payload_in_data_file": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.73
+        },
+        "adaptive/a6_js_split_require": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.676
+        },
+        "adaptive/a7_py_selective_env_keys": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.72
+        },
+        "adaptive/a8_js_selective_env_keys": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.824
+        },
+        "adaptive/a9_path_join_credentials": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.48
+        },
+        "benign/plain_math": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/b64_utils": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/http_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/env_config": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/expr_eval": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "benign/proc_runner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cred_reader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/native_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/readme_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/nspkg_pth": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/sec_scanner_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/embedded_asset": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/update_check": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/plugin_loader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "benign/gh_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.264
+        },
+        "benign/template_data": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/vendored_build": {
+          "flag": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "mean_score": 0.649
+        },
+        "benign/util_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/postinstall_banner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/native_addon": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/husky_prepare": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/api_wrapper": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cli_tool": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/sec_fixtures_js": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/dyn_require": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        }
+      },
+      "splits": {
+        "dev": {
+          "flag": {
+            "k": 48,
+            "n": 48,
+            "rate": 1.0,
+            "ci95": [
+              0.9259,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 41,
+            "n": 48,
+            "rate": 0.8542,
+            "ci95": [
+              0.7283,
+              0.9275
+            ]
+          }
+        },
+        "heldout": {
+          "flag": {
+            "k": 20,
+            "n": 20,
+            "rate": 1.0,
+            "ci95": [
+              0.8389,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 15,
+            "n": 20,
+            "rate": 0.75,
+            "ci95": [
+              0.5313,
+              0.8881
+            ]
+          }
+        },
+        "adaptive": {
+          "flag": {
+            "k": 24,
+            "n": 27,
+            "rate": 0.8889,
+            "ci95": [
+              0.7194,
+              0.9615
+            ]
+          },
+          "block": {
+            "k": 18,
+            "n": 27,
+            "rate": 0.6667,
+            "ci95": [
+              0.4782,
+              0.8136
+            ]
+          }
+        },
+        "benign": {
+          "flag": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          }
+        }
+      },
+      "benign_hard_negatives": {
+        "flag": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        },
+        "block": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        }
+      },
+      "flagged_benign": [
+        "vendored_build"
+      ]
+    },
+    "v3": {
+      "families": {
+        "dev/d1_setup_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.727
+        },
+        "dev/d2_b64_stage_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.919
+        },
+        "dev/d3_npm_postinstall_download_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.715
+        },
+        "dev/d4_npm_postinstall_env_exfil": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.726
+        },
+        "dev/d5_typosquat_cred_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 6,
+            "rate": 0.8333,
+            "ci95": [
+              0.4365,
+              0.9699
+            ]
+          },
+          "mean_score": 0.619
+        },
+        "dev/d6_npm_webhook_stealer": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.963
+        },
+        "dev/d7_pypi_pth_exec": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "mean_score": 0.768
+        },
+        "dev/d8_dependency_confusion": {
+          "flag": {
+            "k": 6,
+            "n": 6,
+            "rate": 1.0,
+            "ci95": [
+              0.6097,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "mean_score": 0.534
+        },
+        "heldout/h1_npm_obfuscator_io": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.899
+        },
+        "heldout/h2_pypi_multistage_zlib": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.853
+        },
+        "heldout/h3_npm_persistence": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 5,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.4345
+            ]
+          },
+          "mean_score": 0.37
+        },
+        "heldout/h4_pypi_ci_gated": {
+          "flag": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "ci95": [
+              0.5655,
+              1.0
+            ]
+          },
+          "mean_score": 0.73
+        },
+        "adaptive/a1_getattr_dispatch": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.748
+        },
+        "adaptive/a2_split_across_files": {
+          "flag": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "adaptive/a3_chr_join_command": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.64
+        },
+        "adaptive/a4_delayed_trigger": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.507
+        },
+        "adaptive/a5_payload_in_data_file": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.73
+        },
+        "adaptive/a6_js_split_require": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.676
+        },
+        "adaptive/a7_py_selective_env_keys": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.72
+        },
+        "adaptive/a8_js_selective_env_keys": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "mean_score": 0.824
+        },
+        "adaptive/a9_path_join_credentials": {
+          "flag": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "ci95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "mean_score": 0.48
+        },
+        "benign/plain_math": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/b64_utils": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/http_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/env_config": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/expr_eval": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "benign/proc_runner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cred_reader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/native_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/readme_setup": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/nspkg_pth": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/sec_scanner_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/embedded_asset": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/update_check": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/plugin_loader": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.055
+        },
+        "benign/gh_client": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.264
+        },
+        "benign/template_data": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/vendored_build": {
+          "flag": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 2,
+            "rate": 1.0,
+            "ci95": [
+              0.3424,
+              1.0
+            ]
+          },
+          "mean_score": 0.649
+        },
+        "benign/util_lib": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/postinstall_banner": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.1
+        },
+        "benign/native_addon": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/husky_prepare": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/api_wrapper": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/cli_tool": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/sec_fixtures_js": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        },
+        "benign/dyn_require": {
+          "flag": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "block": {
+            "k": 0,
+            "n": 2,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.6576
+            ]
+          },
+          "mean_score": 0.0
+        }
+      },
+      "splits": {
+        "dev": {
+          "flag": {
+            "k": 48,
+            "n": 48,
+            "rate": 1.0,
+            "ci95": [
+              0.9259,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 41,
+            "n": 48,
+            "rate": 0.8542,
+            "ci95": [
+              0.7283,
+              0.9275
+            ]
+          }
+        },
+        "heldout": {
+          "flag": {
+            "k": 20,
+            "n": 20,
+            "rate": 1.0,
+            "ci95": [
+              0.8389,
+              1.0
+            ]
+          },
+          "block": {
+            "k": 15,
+            "n": 20,
+            "rate": 0.75,
+            "ci95": [
+              0.5313,
+              0.8881
+            ]
+          }
+        },
+        "adaptive": {
+          "flag": {
+            "k": 24,
+            "n": 27,
+            "rate": 0.8889,
+            "ci95": [
+              0.7194,
+              0.9615
+            ]
+          },
+          "block": {
+            "k": 18,
+            "n": 27,
+            "rate": 0.6667,
+            "ci95": [
+              0.4782,
+              0.8136
+            ]
+          }
+        },
+        "benign": {
+          "flag": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          },
+          "block": {
+            "k": 2,
+            "n": 50,
+            "rate": 0.04,
+            "ci95": [
+              0.011,
+              0.1346
+            ]
+          }
+        }
+      },
+      "benign_hard_negatives": {
+        "flag": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        },
+        "block": {
+          "k": 2,
+          "n": 38,
+          "rate": 0.0526,
+          "ci95": [
+            0.0146,
+            0.1729
+          ]
+        }
+      },
+      "flagged_benign": [
+        "vendored_build"
+      ]
+    }
+  },
+  "real": {
+    "A_v1": {
+      "n": 287,
+      "errors": 0,
+      "flag": {
+        "k": 5,
+        "n": 287,
+        "rate": 0.0174,
+        "ci95": [
+          0.0075,
+          0.0401
+        ]
+      },
+      "block": {
+        "k": 0,
+        "n": 287,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0132
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 5,
+          "n": 137,
+          "rate": 0.0365,
+          "ci95": [
+            0.0157,
+            0.0826
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 150,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.025
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.19,
+        "p95": 4.77,
+        "max": 51.66,
+        "wall_clock_total": 63.0
+      },
+      "flagged": [
+        {
+          "name": "ipython",
+          "eco": "pypi",
+          "score": 0.5,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PYPI-INTREE-BACKEND",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "coloredlogs",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PTH-EXEC-LINE",
+            "YARA-MPD_pth_executable_line"
+          ]
+        },
+        {
+          "name": "spacy",
+          "eco": "pypi",
+          "score": 0.43,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "IOC-ABUSE-INFRA-RAW-HOSTING"
+          ]
+        },
+        {
+          "name": "babel",
+          "eco": "pypi",
+          "score": 0.42,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        },
+        {
+          "name": "execnet",
+          "eco": "pypi",
+          "score": 0.38,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        }
+      ]
+    },
+    "A_v2": {
+      "n": 287,
+      "errors": 0,
+      "flag": {
+        "k": 6,
+        "n": 287,
+        "rate": 0.0209,
+        "ci95": [
+          0.0096,
+          0.0449
+        ]
+      },
+      "block": {
+        "k": 0,
+        "n": 287,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0132
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 6,
+          "n": 137,
+          "rate": 0.0438,
+          "ci95": [
+            0.0202,
+            0.0923
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 150,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.025
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.19,
+        "p95": 4.88,
+        "max": 52.3,
+        "wall_clock_total": 63.7
+      },
+      "flagged": [
+        {
+          "name": "mlflow",
+          "eco": "pypi",
+          "score": 0.55,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "PY-EXFIL",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "PY-DYN-IMPORT"
+          ]
+        },
+        {
+          "name": "ipython",
+          "eco": "pypi",
+          "score": 0.53,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PYPI-INTREE-BACKEND",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "coloredlogs",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PTH-EXEC-LINE",
+            "YARA-MPD_pth_executable_line"
+          ]
+        },
+        {
+          "name": "spacy",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "IOC-ABUSE-INFRA-RAW-HOSTING"
+          ]
+        },
+        {
+          "name": "babel",
+          "eco": "pypi",
+          "score": 0.45,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC",
+            "PY-DYN-IMPORT"
+          ]
+        },
+        {
+          "name": "execnet",
+          "eco": "pypi",
+          "score": 0.38,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        }
+      ]
+    },
+    "A_v3": {
+      "n": 287,
+      "errors": 0,
+      "flag": {
+        "k": 5,
+        "n": 287,
+        "rate": 0.0174,
+        "ci95": [
+          0.0075,
+          0.0401
+        ]
+      },
+      "block": {
+        "k": 0,
+        "n": 287,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0132
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 5,
+          "n": 137,
+          "rate": 0.0365,
+          "ci95": [
+            0.0157,
+            0.0826
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 150,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.025
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.17,
+        "p95": 4.86,
+        "max": 47.47,
+        "wall_clock_total": 58.9
+      },
+      "flagged": [
+        {
+          "name": "mlflow",
+          "eco": "pypi",
+          "score": 0.55,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "PY-EXFIL",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "PY-DYN-IMPORT"
+          ]
+        },
+        {
+          "name": "coloredlogs",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PTH-EXEC-LINE",
+            "YARA-MPD_pth_executable_line"
+          ]
+        },
+        {
+          "name": "ipython",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PYPI-INTREE-BACKEND",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "PY-EXEC-DYNAMIC"
+          ]
+        },
+        {
+          "name": "spacy",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "IOC-ABUSE-INFRA-RAW-HOSTING"
+          ]
+        },
+        {
+          "name": "execnet",
+          "eco": "pypi",
+          "score": 0.38,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        }
+      ]
+    },
+    "B_v1": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 2,
+        "n": 260,
+        "rate": 0.0077,
+        "ci95": [
+          0.0021,
+          0.0276
+        ]
+      },
+      "block": {
+        "k": 1,
+        "n": 260,
+        "rate": 0.0038,
+        "ci95": [
+          0.0007,
+          0.0215
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 2,
+          "n": 130,
+          "rate": 0.0154,
+          "ci95": [
+            0.0042,
+            0.0544
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 130,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0287
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.16,
+        "p95": 4.19,
+        "max": 59.38,
+        "wall_clock_total": 62.1
+      },
+      "flagged": [
+        {
+          "name": "mypy",
+          "eco": "pypi",
+          "score": 0.67,
+          "verdict": "malicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "pycryptodomex",
+          "eco": "pypi",
+          "score": 0.51,
+          "verdict": "suspicious",
+          "top": [
+            "PKG-TYPOSQUAT",
+            "PY-EXEC-DYNAMIC"
+          ]
+        }
+      ]
+    },
+    "B_v2": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 4,
+        "n": 260,
+        "rate": 0.0154,
+        "ci95": [
+          0.006,
+          0.0389
+        ]
+      },
+      "block": {
+        "k": 1,
+        "n": 260,
+        "rate": 0.0038,
+        "ci95": [
+          0.0007,
+          0.0215
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 4,
+          "n": 130,
+          "rate": 0.0308,
+          "ci95": [
+            0.012,
+            0.0764
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 130,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0287
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.12,
+        "p95": 3.97,
+        "max": 60.39,
+        "wall_clock_total": 62.9
+      },
+      "flagged": [
+        {
+          "name": "mypy",
+          "eco": "pypi",
+          "score": 0.71,
+          "verdict": "malicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-SHELL-EXEC",
+            "PY-DYN-IMPORT",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "pycryptodomex",
+          "eco": "pypi",
+          "score": 0.57,
+          "verdict": "suspicious",
+          "top": [
+            "PKG-TYPOSQUAT",
+            "PY-EXEC-DYNAMIC",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT"
+          ]
+        },
+        {
+          "name": "ghapi",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "OBF-ENCODED-PAYLOAD",
+            "OBF-ENCODED-PAYLOAD",
+            "OBF-ENCODED-PAYLOAD"
+          ]
+        },
+        {
+          "name": "kubernetes",
+          "eco": "pypi",
+          "score": 0.38,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DECODED",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT"
+          ]
+        }
+      ]
+    },
+    "B_v3": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 2,
+        "n": 260,
+        "rate": 0.0077,
+        "ci95": [
+          0.0021,
+          0.0276
+        ]
+      },
+      "block": {
+        "k": 0,
+        "n": 260,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0146
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 2,
+          "n": 130,
+          "rate": 0.0154,
+          "ci95": [
+            0.0042,
+            0.0544
+          ]
+        },
+        "npm": {
+          "k": 0,
+          "n": 130,
+          "rate": 0.0,
+          "ci95": [
+            0.0,
+            0.0287
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.12,
+        "p95": 4.25,
+        "max": 61.97,
+        "wall_clock_total": 64.5
+      },
+      "flagged": [
+        {
+          "name": "pycryptodomex",
+          "eco": "pypi",
+          "score": 0.57,
+          "verdict": "suspicious",
+          "top": [
+            "PKG-TYPOSQUAT",
+            "PY-EXEC-DYNAMIC",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT"
+          ]
+        },
+        {
+          "name": "ghapi",
+          "eco": "pypi",
+          "score": 0.47,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "OBF-ENCODED-PAYLOAD",
+            "OBF-ENCODED-PAYLOAD",
+            "OBF-ENCODED-PAYLOAD"
+          ]
+        }
+      ]
+    },
+    "C_v1": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 5,
+        "n": 260,
+        "rate": 0.0192,
+        "ci95": [
+          0.0082,
+          0.0442
+        ]
+      },
+      "block": {
+        "k": 3,
+        "n": 260,
+        "rate": 0.0115,
+        "ci95": [
+          0.0039,
+          0.0334
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 2,
+          "n": 130,
+          "rate": 0.0154,
+          "ci95": [
+            0.0042,
+            0.0544
+          ]
+        },
+        "npm": {
+          "k": 3,
+          "n": 130,
+          "rate": 0.0231,
+          "ci95": [
+            0.0079,
+            0.0657
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.36,
+        "p95": 11.33,
+        "max": 62.19,
+        "wall_clock_total": 84.2
+      },
+      "flagged": [
+        {
+          "name": "dprint",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "bun",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "prisma",
+          "eco": "npm",
+          "score": 0.6,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-BEACON"
+          ]
+        },
+        {
+          "name": "sympy",
+          "eco": "pypi",
+          "score": 0.46,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        },
+        {
+          "name": "llvmlite",
+          "eco": "pypi",
+          "score": 0.39,
+          "verdict": "suspicious",
+          "top": [
+            "PYPI-CMDCLASS-INSTALL-OVERRIDE",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC"
+          ]
+        }
+      ]
+    },
+    "C_v2": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 6,
+        "n": 260,
+        "rate": 0.0231,
+        "ci95": [
+          0.0106,
+          0.0494
+        ]
+      },
+      "block": {
+        "k": 3,
+        "n": 260,
+        "rate": 0.0115,
+        "ci95": [
+          0.0039,
+          0.0334
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 3,
+          "n": 130,
+          "rate": 0.0231,
+          "ci95": [
+            0.0079,
+            0.0657
+          ]
+        },
+        "npm": {
+          "k": 3,
+          "n": 130,
+          "rate": 0.0231,
+          "ci95": [
+            0.0079,
+            0.0657
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.37,
+        "p95": 11.27,
+        "max": 62.09,
+        "wall_clock_total": 83.2
+      },
+      "flagged": [
+        {
+          "name": "dprint",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "bun",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "prisma",
+          "eco": "npm",
+          "score": 0.6,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-BEACON"
+          ]
+        },
+        {
+          "name": "sympy",
+          "eco": "pypi",
+          "score": 0.53,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC"
+          ]
+        },
+        {
+          "name": "llvmlite",
+          "eco": "pypi",
+          "score": 0.39,
+          "verdict": "suspicious",
+          "top": [
+            "PYPI-CMDCLASS-INSTALL-OVERRIDE",
+            "PY-SHELL-EXEC",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "jupyter-builder",
+          "eco": "pypi",
+          "score": 0.35,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT"
+          ]
+        }
+      ]
+    },
+    "C_v3": {
+      "n": 260,
+      "errors": 0,
+      "flag": {
+        "k": 6,
+        "n": 260,
+        "rate": 0.0231,
+        "ci95": [
+          0.0106,
+          0.0494
+        ]
+      },
+      "block": {
+        "k": 3,
+        "n": 260,
+        "rate": 0.0115,
+        "ci95": [
+          0.0039,
+          0.0334
+        ]
+      },
+      "by_ecosystem_flag": {
+        "pypi": {
+          "k": 3,
+          "n": 130,
+          "rate": 0.0231,
+          "ci95": [
+            0.0079,
+            0.0657
+          ]
+        },
+        "npm": {
+          "k": 3,
+          "n": 130,
+          "rate": 0.0231,
+          "ci95": [
+            0.0079,
+            0.0657
+          ]
+        }
+      },
+      "latency_seconds": {
+        "median": 0.35,
+        "p95": 11.16,
+        "max": 64.52,
+        "wall_clock_total": 85.7
+      },
+      "flagged": [
+        {
+          "name": "dprint",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "bun",
+          "eco": "npm",
+          "score": 0.68,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-CHILD-PROCESS",
+            "NPM-LIFECYCLE-SCRIPT"
+          ]
+        },
+        {
+          "name": "prisma",
+          "eco": "npm",
+          "score": 0.6,
+          "verdict": "malicious",
+          "top": [
+            "JS-FETCH-AND-RUN",
+            "JS-BEACON"
+          ]
+        },
+        {
+          "name": "sympy",
+          "eco": "pypi",
+          "score": 0.49,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-EXEC-DYNAMIC",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "llvmlite",
+          "eco": "pypi",
+          "score": 0.37,
+          "verdict": "suspicious",
+          "top": [
+            "PYPI-CMDCLASS-INSTALL-OVERRIDE",
+            "PY-SHELL-EXEC"
+          ]
+        },
+        {
+          "name": "jupyter-builder",
+          "eco": "pypi",
+          "score": 0.35,
+          "verdict": "suspicious",
+          "top": [
+            "PY-EXFIL",
+            "IOC-ABUSE-INFRA-RAW-HOSTING",
+            "PY-DYN-IMPORT",
+            "PY-DYN-IMPORT"
+          ]
+        }
+      ]
+    }
+  },
+  "ablation": {
+    "baseline": {
+      "malicious_flagged": 92,
+      "of": 95
+    },
+    "blobs": {
+      "malicious_flagged": 92,
+      "of": 95,
+      "delta": 0,
+      "hard_negative_flagged": 2
+    },
+    "hooks": {
+      "malicious_flagged": 47,
+      "of": 95,
+      "delta": -45,
+      "hard_negative_flagged": 0
+    },
+    "infra": {
+      "malicious_flagged": 92,
+      "of": 95,
+      "delta": 0,
+      "hard_negative_flagged": 2
+    },
+    "js": {
+      "malicious_flagged": 76,
+      "of": 95,
+      "delta": -16,
+      "hard_negative_flagged": 2
+    },
+    "metadata": {
+      "malicious_flagged": 89,
+      "of": 95,
+      "delta": -3,
+      "hard_negative_flagged": 2
+    },
+    "python": {
+      "malicious_flagged": 55,
+      "of": 95,
+      "delta": -37,
+      "hard_negative_flagged": 0
+    },
+    "shell": {
+      "malicious_flagged": 80,
+      "of": 95,
+      "delta": -12,
+      "hard_negative_flagged": 2
+    },
+    "typosquat": {
+      "malicious_flagged": 92,
+      "of": 95,
+      "delta": 0,
+      "hard_negative_flagged": 2
+    },
+    "yara": {
+      "malicious_flagged": 92,
+      "of": 95,
+      "delta": 0,
+      "hard_negative_flagged": 2
+    }
+  },
+  "calibrated_v1": {
+    "fpr_on_C_fresh": {
+      "k": 3,
+      "n": 260,
+      "rate": 0.0115,
+      "ci95": [
+        0.0039,
+        0.0334
+      ]
+    },
+    "threshold_chosen_on_A_at_1pct_fpr": 0.468,
+    "fpr_on_A": {
+      "k": 2,
+      "n": 287,
+      "rate": 0.007,
+      "ci95": [
+        0.0019,
+        0.025
+      ]
+    },
+    "fpr_on_B_untouched": {
+      "k": 2,
+      "n": 260,
+      "rate": 0.0077,
+      "ci95": [
+        0.0021,
+        0.0276
+      ]
+    },
+    "synthetic_malicious_detected": {
+      "k": 66,
+      "n": 95,
+      "rate": 0.6947,
+      "ci95": [
+        0.5961,
+        0.7783
+      ]
+    },
+    "auc_synthetic_malicious_vs_real_B": 0.9211
+  },
+  "calibrated_v2": {
+    "fpr_on_C_fresh": {
+      "k": 3,
+      "n": 260,
+      "rate": 0.0115,
+      "ci95": [
+        0.0039,
+        0.0334
+      ]
+    },
+    "threshold_chosen_on_A_at_1pct_fpr": 0.533,
+    "fpr_on_A": {
+      "k": 2,
+      "n": 287,
+      "rate": 0.007,
+      "ci95": [
+        0.0019,
+        0.025
+      ]
+    },
+    "fpr_on_B_untouched": {
+      "k": 2,
+      "n": 260,
+      "rate": 0.0077,
+      "ci95": [
+        0.0021,
+        0.0276
+      ]
+    },
+    "synthetic_malicious_detected": {
+      "k": 77,
+      "n": 95,
+      "rate": 0.8105,
+      "ci95": [
+        0.7203,
+        0.8767
+      ]
+    },
+    "auc_synthetic_malicious_vs_real_B": 0.9902
+  },
+  "calibrated_v3": {
+    "fpr_on_C_fresh": {
+      "k": 4,
+      "n": 260,
+      "rate": 0.0154,
+      "ci95": [
+        0.006,
+        0.0389
+      ]
+    },
+    "threshold_chosen_on_A_at_1pct_fpr": 0.468,
+    "fpr_on_A": {
+      "k": 2,
+      "n": 287,
+      "rate": 0.007,
+      "ci95": [
+        0.0019,
+        0.025
+      ]
+    },
+    "fpr_on_B_untouched": {
+      "k": 1,
+      "n": 260,
+      "rate": 0.0038,
+      "ci95": [
+        0.0007,
+        0.0215
+      ]
+    },
+    "synthetic_malicious_detected": {
+      "k": 87,
+      "n": 95,
+      "rate": 0.9158,
+      "ci95": [
+        0.8425,
+        0.9567
+      ]
+    },
+    "auc_synthetic_malicious_vs_real_B": 0.992
+  }
+}

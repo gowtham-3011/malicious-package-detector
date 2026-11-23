@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "malicious-package-detector"
+version = "0.1.0"
+description = "Static (never-executing) detector for malicious PyPI/npm packages, with a campaign tracker and an honest evaluation lab."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+yara = ["yara-python>=4.3"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+mpd = "mpd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mpd = ["data/*.txt", "rules/*.yar"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-q"
